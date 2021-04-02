@@ -55,7 +55,7 @@ const AddProducts = () => {
 
       <div className="container">
         <div className="row">
-        <div className="col-3 col-sm-6 bg-secondary">
+        <div className="col-3 bg-secondary">
 
         <nav>
           <ul style={{colour:'white',textDecoration:'none'}} className="pt-5">
@@ -69,7 +69,7 @@ const AddProducts = () => {
         </div>
 
         {/* add  products cart */}
-          <div className="col-9 col-sm-6">
+          <div className="col-9">
       <div style={{padding:'0% 5% 5% 5%'}}>
           <h1>Add Products</h1>
 

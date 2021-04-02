@@ -10,8 +10,9 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import AddProducts from './components/AddProducts/AddProducts';
 import Navigation from './components/Home/Navigation';
-import CheckOut from './components/CheckOut/CheckOut';
 import ManageProducts from './components/ManageProducts/ManageProducts';
+import Orders from './components/Orders/Orders';
+import CheckOut from './components/CheckOut/CheckOut';
 
 function App() {
   return (
@@ -30,7 +31,12 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/order">
+          <Route path="/orders">
+            <Orders />
+          </Route>
+
+
+          <Route path="/checkout/:_id">
             <CheckOut />
           </Route>
 

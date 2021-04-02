@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light ">
       <div className="container-fluid">
         <a className="navbar-brand p-3 " href="#">
-          Navbar
+          <h1 style={{color:'blue'}}>  AKIJ STORE</h1>
         </a>
         <button
           className="navbar-toggler"
@@ -28,7 +28,10 @@ const Navigation = () => {
             <Link className="p-3 fs-1" to="/home">
               Home
             </Link>
-            <Link className="p-3 fs-1" to="/order">
+            <Link className="p-3 fs-1" to="/checkout">
+              {/* Checkout */}
+            </Link>
+            <Link className="p-3 fs-1" to="/orders">
               Order
             </Link>
             <Link className="p-3 fs-1" to="/admin">
