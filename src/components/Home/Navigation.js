@@ -28,9 +28,7 @@ const Navigation = () => {
             <Link className="p-3 fs-1" to="/home">
               Home
             </Link>
-            <Link className="p-3 fs-1" to="/checkout">
-              {/* Checkout */}
-            </Link>
+           
             <Link className="p-3 fs-1" to="/orders">
               Order
             </Link>
@@ -42,6 +40,9 @@ const Navigation = () => {
             </Link>
             <Link className="p-3 fs-1" to="/login">
               Login
+            </Link>
+            <Link className="p-3 fs-1" to="/checkout">
+              {/* Checkout */}
             </Link>
           </div>
         </div>

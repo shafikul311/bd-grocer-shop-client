@@ -5,7 +5,6 @@ const CheckOut = () => {
     const[product ,setProducts] = useState([])
 
     const {_id} = useParams();
-    // console.log(_id);
 
   useEffect(() => {
     const url =`http://localhost:5080/products/${_id}`
@@ -15,15 +14,36 @@ const CheckOut = () => {
     
   },[_id])
 
-//   console.log(product.name)
+  const handleCheckOut= () => {
+       const orderDetails ={
+          ...product,
+          OrderTime: new Date()
+       }
+    //   console.log('product checked')
 
+      fetch("http://localhost:5080/orders", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(orderDetails),
+    })
+      .then((res) => res.json())
+    
+      .then((data) => {
+        
+        if (data) {
+            console.log('order Placed')
+         
+          alert("order placed successfully");
+        }
+      });
+  }
   
-const {name , price} = product
-
+const {name , price} = product;
 
     return (
         <div className="m-5 shadow-sm p-3 mb-5 bg-body rounded">
             <h1>Checkout</h1>
+            <div>
            <table className="table">
                 <thead>
                     <tr>
@@ -43,9 +63,10 @@ const {name , price} = product
                    
                    
                 </tbody>
-                {/* <input className="btn btn-primary" type=" submit" value="Checkout"/> */}
-                    <button  className="btn btn-primary">Checkout</button>
-                </table>
+                </table >
+                
+                <button onClick={handleCheckOut} className="btn btn-primary">Checkout</button>
+                </div>
         </div>
     );
 };

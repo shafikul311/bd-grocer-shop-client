@@ -1,13 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ManageProducts = () => {
     return (
         <div className="container p-1">
         <div className="row">
         <div className="col-3  bg-secondary">
+
+        <Link className="p-3 fs-1" to="/admin">
+              Add Products
+            </Link>
             
             
-            col-4</div>
+           
+            </div>
           <div className="col-9  ">
               
               <h1>Manage Products</h1>

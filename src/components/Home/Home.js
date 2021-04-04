@@ -10,7 +10,7 @@ const Home = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, [products]);
+  }, []);
 
   //  console.log(products.length)
 
@@ -34,7 +34,7 @@ const Home = () => {
         
         {products?.map((product, _id) => (
           <Product key={_id} product={product}>
-            {" "}
+         
           </Product>
         ))}
       </div>

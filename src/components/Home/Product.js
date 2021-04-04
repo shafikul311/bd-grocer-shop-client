@@ -8,10 +8,11 @@ const Product = (props) => {
 
 
   const { name, price, image ,_id  } = props.product;
+  // console.log(image)
  
   return (
-    <div className="col-md-4 shadow-sm p-3 mb-5 bg-body rounded p-2">
-      <img style={{ height: "250px" }} src={image} alt="" />
+    <div className="col-md-4 shadow-sm mb-5 bg-body rounded p-2">
+      <img style={{ height: "220px" }} src={image} alt="" />
       <hr />
       <h3>{name}</h3>
       <h3>{price}</h3>
