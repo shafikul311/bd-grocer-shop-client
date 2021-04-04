@@ -41,7 +41,7 @@ const CheckOut = () => {
 const {name , price} = product;
 
     return (
-        <div className="m-5 shadow-sm p-3 mb-5 bg-body rounded">
+        <div className="m-2 shadow-sm p-3 bg-body rounded">
             <h1>Checkout</h1>
             <div>
            <table className="table">
@@ -64,8 +64,8 @@ const {name , price} = product;
                    
                 </tbody>
                 </table >
-                
-                <button onClick={handleCheckOut} className="btn btn-primary">Checkout</button>
+
+                <button onClick={handleCheckOut} className="btn btn-primary float-end">Checkout</button>
                 </div>
         </div>
     );

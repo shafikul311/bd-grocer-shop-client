@@ -21,7 +21,7 @@ const Orders = () => {
     return (
         <div>
 
-            <h3>Here is all of your order List</h3> <hr/>
+            <h2>Here is all of your ordered iteams List</h2> <hr/>
 
             {
               orders.length === 0 && <div style={{paddingLeft:'40%', paddingTop:'3%'}}> 
