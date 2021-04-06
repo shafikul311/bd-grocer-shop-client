@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import ManageProductList from "./ManageProductList";
 
+
+
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);
 
@@ -14,6 +16,8 @@ const ManageProducts = () => {
       .then((data) => setProducts(data));
   }, []);
 
+
+  
   return (
     <div className="container m-3 p-1">
       <div className="row">

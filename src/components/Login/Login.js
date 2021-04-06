@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useHistory, useLocation } from "react-router";
 
+
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
@@ -33,11 +34,10 @@ const Login = () => {
         history.replace(from);
       })
       .catch((error) => {
-        
         var errorMessage = error.message;
         var email = error.email;
         var credential = error.credential;
-        console.log(errorMessage ,email ,credential)
+        console.log(errorMessage, email, credential);
       });
   };
 
