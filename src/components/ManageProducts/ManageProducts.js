@@ -17,12 +17,12 @@ const ManageProducts = () => {
   return (
     <div className="container-fluid m-3 p-1">
       <div className="row">
-        <div className="col-3 bg-secondary">
+        <div className="col-3 pt-4 bg-secondary">
           <Link to="/admin">
-            <h1>
+            <h2>
               {" "}
               <FontAwesomeIcon icon={faPlusCircle} /> Add Products{" "}
-            </h1>
+            </h2>
           </Link>
         </div>
         <div className="col-9  ">

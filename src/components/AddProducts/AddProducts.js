@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 
 const AddProducts = () => {
 
-    const [imageURL, setImageURL] = useState(null)
+  
     const { register, handleSubmit, watch, errors } = useForm();
+    const [imageURL, setImageURL] = useState(null)
 
     const onSubmit = data => {
       const productData = {
@@ -25,7 +26,8 @@ const AddProducts = () => {
         },
         body: JSON.stringify(productData)
       })
-      .then(res => console.log('server side response', res))
+
+      .then(res => res.json())
     }
 
     const handleImageSubmit = event => {
@@ -50,12 +52,12 @@ const AddProducts = () => {
     }
     return (
 
-                // side bre
+                // side ber
 
 
       <div className="container-fluid">
         <div className="row">
-        <div className="col-3 bg-secondary color-white">
+        <div className="col-3 bg-secondary color-primary">
 
         <nav>
           <ul style={{colour:'white',textDecoration:'none'}} className="pt-5">

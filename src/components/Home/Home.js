@@ -15,11 +15,11 @@ const Home = () => {
   //  console.log(products.length)
 
   return (
-    <div>
+    <div style={{backgroundColor:'#f1f2f6'}}>
       <div>
         <Search />
       </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4 m-3 p-5">
+      <div className="row row-cols-1 row-cols-md-3 g-4 m-2 p-2">
 
         {
               products.length === 0 && <div style={{paddingLeft:'40%', paddingTop:'3%'}}> 

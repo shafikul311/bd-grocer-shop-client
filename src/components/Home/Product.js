@@ -11,8 +11,8 @@ const Product = (props) => {
   // console.log(image)
  
   return (
-    <div className="col-md-4 shadow-sm mb-5 bg-body rounded p-2">
-      <img style={{ height: "220px" }} src={image} alt="" />
+    <div className="col-md-3 shadow-sm m-5 bg-body rounded pt-2 pb-2 bg-white">
+      <img style={{ height: "250px" }} src={image} alt="" />
       <hr />
       <h3>{name}</h3>
       <h3>{price}</h3>

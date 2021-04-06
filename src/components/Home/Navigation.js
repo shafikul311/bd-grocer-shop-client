@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light ">
       <div className="container-fluid">
         <a className="navbar-brand p-3 " href="#">
-          <h1 style={{color:'blue'}}>  AKIJ STORE</h1>
+          <h1 style={{color:'blue'}}> BD GROCER SHOP</h1>
         </a>
         <button
           className="navbar-toggler"
@@ -25,21 +25,25 @@ const Navigation = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav ">
-            <Link className="p-3 fs-1" to="/home">
-              Home
+            <Link className="p-3 fs-1"  to="/home">
+             <h3> Home </h3>
             </Link>
            
             <Link className="p-3 fs-1" to="/orders">
-              Order
+            <h3> Order </h3>
+             
             </Link>
             <Link className="p-3 fs-1" to="/admin">
-              Admin
+            <h3>Admin </h3>
+              
             </Link>
             <Link className="p-3 fs-1" to="/deals">
-              Deals
+            <h3> Deals </h3>
+              
             </Link>
             <Link className="p-3 fs-1" to="/login">
-              Login
+            <h3>Login</h3>
+              
             </Link>
             <Link className="p-3 fs-1" to="/checkout">
               {/* Checkout */}

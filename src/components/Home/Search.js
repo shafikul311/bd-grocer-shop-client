@@ -4,8 +4,9 @@ const Search = () => {
     return (
         <div>
 
-            <h3 >Search Now</h3>
-            <input type="search" name="" id="" placeholder="search"/>
+            <h3 style={{color:'blue'}} >Search Now</h3>
+            <input type="search" name="" id="" placeholder="search" style={{color:'blue'}}/>
+           
             
         </div>
     );

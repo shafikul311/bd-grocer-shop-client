@@ -8,9 +8,16 @@ const ManageProductList = (props) => {
 
 
     const handleDeleteProduct =()=> { 
-        console.log('delated pd')
+        console.log('delate pd',{_id})
+
+
+
 
     }
+
+
+   
+    
     return (
         <tbody>
         <tr>
