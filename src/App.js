@@ -21,7 +21,7 @@ const [loggedInUser ,setLoggedInUser] = useState({});
       <UserContext.Provider value={[loggedInUser ,setLoggedInUser]}>
       
         <Router>
-        <p>{loggedInUser.name}</p>
+        {/* <p>{loggedInUser.name}</p> */}
           <Navigation />
 
           <Switch>

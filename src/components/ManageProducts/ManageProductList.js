@@ -8,18 +8,21 @@ const ManageProductList = (props) => {
 
 
     const handleDeleteProduct =()=> { 
-        console.log('delate pd',{_id})
 
+      // console.log(_id)
 
-
+      fetch(`http://localhost:5080/products/${_id}`,{
+        method: 'DELETE'
+      })
+      .then(res =>res.json())
+      .then(data =>console.log(data))
 
     }
-
 
    
     
     return (
-        <tbody>
+        <tbody >
         <tr>
           
           <td>{name}</td>

@@ -15,7 +15,7 @@ const ManageProducts = () => {
   }, []);
 
   return (
-    <div className="container-fluid m-3 p-1">
+    <div className="container m-3 p-1">
       <div className="row">
         <div className="col-3 pt-4 bg-secondary">
           <Link to="/admin">
@@ -27,9 +27,9 @@ const ManageProducts = () => {
         </div>
         <div className="col-9  ">
           <h1>Manage Products</h1>
-          <table className="table me-5">
+          <table className="table me-2 ">
             <thead>
-              <tr className=" shadow p-3 mb-5 bg-body rounded">
+              <tr className=" shadow p-3 mb-2 bg-body rounded">
                 <th scope="col">Product Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Action</th>
