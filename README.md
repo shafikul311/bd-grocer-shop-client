@@ -10,5 +10,5 @@
 *manage-products
 *firebase google sign-in
 
-live website link : bd-grocer-shop.netlify.app
+live website link : https://bd-grocer-shop.netlify.app/
 # full-stack-client-shafikul311
